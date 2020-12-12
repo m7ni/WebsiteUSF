@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins',sans-serif;
+  display: flex;
+  
+}
+header{
+
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 20vh;
+  align-items: center;
+}
+nav{
+  flex: 2;
+}
+.logoUSF{
+  
+  flex: 1;
+}
+.logoUSF,.links_nav{
+  display:flex;
+}
+.links_nav{
+  justify-content: space-evenly;
+  list-style: none;
+  text-decoration: none;
+  color:aqua ;
+  font-size: 18px;
+}
