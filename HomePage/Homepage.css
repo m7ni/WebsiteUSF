@@ -33,3 +33,24 @@ nav{
   color:aqua ;
   font-size: 18px;
 }
+.apresentação{
+  position: absolute;
+  left:50%;
+  top:50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  letter-spacing:3px;
+  color
+}
+.apresentação h1{
+    font-size: 20px;
+}
+.logo2{
+  width: 550px;
+  
+  position: relative;
+}
+.logocentral{
+  object-fit: cover;
+  width: 50%;
+}
