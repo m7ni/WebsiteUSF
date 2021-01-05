@@ -10,13 +10,14 @@
     margin: 0;
     padding: 0;
   }
+  
   header{
     display: flex;
     width: 90%;
     margin: auto;
     height: 10vh;
     align-items: center;
-    
+  
   }
   nav{
     flex: 2;
@@ -38,8 +39,4 @@
   .links_nav:hover{
     transition: 0.5s ease;
     color: black;
-  }
-  @media (max-width:992px){
-    
-
   }
