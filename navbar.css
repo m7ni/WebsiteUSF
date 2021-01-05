@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    background-color: rgb(232, 249, 252);
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+    
+  }
+  nav{
+    flex: 2;
+  }
+  .logoUSF{
+    flex: 1;
+  
+  }
+  .logoUSF,.links_nav{
+    display:flex;
+  }
+  .links_nav{
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+    color:rgb(100, 212, 212) ;
+    font-size: 18px;
+  }
+  .links_nav:hover{
+    transition: 0.5s ease;
+    color: black;
+  }
