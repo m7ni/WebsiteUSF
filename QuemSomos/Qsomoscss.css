@@ -147,3 +147,7 @@ main {
   }
 }
 /*# sourceMappingURL=Qsomoscss.css.map */
+input[type=text]{
+  text-align: center;
+  border-radius: 2px;
+}

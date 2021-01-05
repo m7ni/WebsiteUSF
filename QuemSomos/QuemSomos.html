@@ -90,23 +90,23 @@
             <div class="formulario">
                 <h2>Gostaria de falar connosco?</h2> Preencha o seguinte formulário:
                 <form>
-                    <label for="pnome">Primeiro Nome:</label><br>
-                    <input type="text" id="pnome" name="pnome"><br>
+                    <input type="text" id="pnome" placeholder="Nome" name="pnome" maxlength="20"><br>
+
+                    <input type="text" id="unome"  placeholder="Apelido" name="unome" maxlength="20"><br>
+
+                    <input type="date" id="idade"  placeholder="Idade" name="idade"><br>
+
+                    <select>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="2">Outro</option>
+                    </select><br>
                     
-                    <label for="unome">Último nome:</label><br>
-                    <input type="text" id="unome" name="unome">
+                    <input type="text" id="unome" name="unome"><br>
+
+                    <button type="button">Confirmar</button>
                     
-                    <label for="idade">Idade:</label><br>
-                    <input type="text" id="idade" name="idade">
-                    <label for="male">Masculino</label><br>
-                    <input type="radio" id="masculino" name="generro" value="male">
-                    <label for="female">Feminino</label><br>
-                    <input type="radio" id="feminino" name="genero" value="feminino">
-                    <label for="outro">Outro</label>
-                    <input type="radio" id="outro" name="genero" value="outro">
-                    
-                    <label for="">Último nome:</label><br>
-                    <input type="text" id="unome" name="unome">
+                    <button type="reset">Limpar</button>
                   </form>
             </div>
     </main>     
