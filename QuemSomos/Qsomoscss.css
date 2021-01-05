@@ -1,0 +1,149 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mvv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10vh;
+  width: 50%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 15px;
+  padding-top: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(137, 43, 226, 0.096);
+}
+
+.mvv h3 {
+  margin-bottom: 5px;
+}
+
+.mvv p {
+  margin-bottom: 30px;
+}
+
+.missao p {
+  margin-left: 7px;
+  text-align: justify;
+}
+
+.visao p {
+  margin-left: 7px;
+  text-align: justify;
+}
+
+.valores p {
+  margin-left: 7px;
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2px;
+}
+
+.coordenador p {
+  margin-left: 7px;
+  text-align: justify;
+}
+
+.coordenador h3 {
+  margin-top: 20px;
+}
+
+.ConselhoTecnico p {
+  margin-left: 7px;
+  text-align: justify;
+  margin-bottom: 2px;
+}
+
+.ars h3 {
+  margin-top: 20px;
+}
+
+.ars p {
+  margin-left: 7px;
+  text-align: justify;
+}
+
+.modelo p {
+  margin-left: 7px;
+  text-align: justify;
+}
+
+.inicioatividade p {
+  margin-left: 7px;
+  text-align: justify;
+}
+
+.aces p {
+  margin-left: 7px;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10vh;
+  margin-right: 0px;
+  margin-left: 20px;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: right;
+  background-color: rgba(0, 0, 255, 0.062);
+  text-align: center;
+  border-radius: 45px;
+  width: 50;
+}
+
+.formulario label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mvv {
+    width: 100%;
+    margin-right: 0%;
+    text-align: center;
+  }
+  .valores p {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=Qsomoscss.css.map */

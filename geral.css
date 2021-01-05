@@ -17,6 +17,8 @@
     margin: auto;
     height: 10vh;
     align-items: center;
+    position: absolute;
+   
   
   }
   nav{
@@ -24,7 +26,7 @@
   }
   .logoUSF{
     flex: 1;
-  
+    margin-left: 15px;
   }
   .logoUSF,.links_nav{
     display:flex;
