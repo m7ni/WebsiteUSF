@@ -127,7 +127,7 @@ main {
           flex-direction: column;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -147,7 +147,3 @@ main {
   }
 }
 /*# sourceMappingURL=Qsomoscss.css.map */
-input[type=text]{
-  text-align: center;
-  border-radius: 2px;
-}

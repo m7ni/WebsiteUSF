@@ -1,4 +1,4 @@
- {
+ *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -8,42 +8,35 @@
     font-family: 'Poppins',sans-serif;
     display: flex;
     background-color: rgb(232, 249, 252);
-    margin: 0;
+    margin-top: 0;
     padding: 0;
+  }
+
+  header{
+    max-height: 10vh;
   }
   
   .logoUSF{
     flex: 1;
     margin-left: 15px;
   }
+
   .logoUSF,.links_nav{
     display:flex;
     flex-direction: column;
-  
   }
+
   :root {
     --primary-color: rgba(13, 110, 139, 0.75);
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
   }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.4;
-  }
-  
+ 
   .container {
     max-width: 100%;
     margin: auto;
     overflow: hidden;
     padding: 0 3rem;
-    
   }
 
   .btn {
@@ -60,13 +53,19 @@
   .btn:hover {
     opacity: 0.7;
   }
+
+  /* Estilos do menu */
+  .menu{
+    max-height: 10vh;
+    max-width: 0vh;
+  }
   
-  /* MENU STYLES */
   .menu-wrap {
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1;
+    max-height: 10vh;
   }
   
   .menu-wrap .toggler {
@@ -75,8 +74,8 @@
     right: 0;
     z-index: 2;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 10vh;
+    height: 10vh;
     opacity: 0;
   }
   
@@ -157,7 +156,7 @@
   .menu-wrap .menu {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -189,4 +188,10 @@
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
+  }
+
+  ul.links_nav{
+    margin-top: 85vh;
+    margin-right: 180vh;
+    align-items: center;
   }
