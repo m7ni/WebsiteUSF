@@ -1,9 +1,9 @@
-/* {
+ {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
   }
-  */
+  
   body{
     font-family: 'Poppins',sans-serif;
     display: flex;
@@ -11,38 +11,16 @@
     margin: 0;
     padding: 0;
   }
-  /*
-  header{
-    display: flex;
-    width: 90%;
-    margin: auto;
-    height: 10vh;
-    align-items: center;
-    position: absolute;
   
-  }
-  /**
-  nav{
-    flex: 2;
-  }
   .logoUSF{
     flex: 1;
     margin-left: 15px;
   }
   .logoUSF,.links_nav{
     display:flex;
+    flex-direction: column;
+  
   }
-  .links_nav{
-    justify-content: space-evenly;
-    list-style: none;
-    text-decoration: none;
-    color:rgb(100, 212, 212) ;
-    font-size: 18px;
-  }
-  .links_nav:hover{
-    transition: 0.5s ease;
-    color: black;
-  }*/
   :root {
     --primary-color: rgba(13, 110, 139, 0.75);
     --overlay-color: rgba(24, 39, 51 , 0.85);
@@ -61,10 +39,11 @@
   }
   
   .container {
-    max-width: 960px;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
     padding: 0 3rem;
+    
   }
 
   .btn {
@@ -106,8 +85,8 @@
     top: 0;
     right: 0;
     z-index: 1;
-    width: 60px;
-    height: 60px;
+    width: 10vh;
+    height: 10vh;
     padding: 1rem;
     background: var(--primary-color);
     display: flex;
@@ -140,15 +119,12 @@
     background: inherit;
   }
   
-  /* Moves Line Down */
+  /* terceira linha*/
   .menu-wrap .hamburger > div::after {
     top: 10px;
   }
   
-  /* Toggler Animation */
-  .menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-  }
+  
   
   /* Turns Lines Into X */
   .menu-wrap .toggler:checked + .hamburger > div:before,
@@ -157,12 +133,12 @@
     transform: rotate(90deg);
   }
   
-  /* Rotate On Hover When Checked */
+  /* Quando o meu está aberto, hover no X faz com que ele rode*/
   .menu-wrap .toggler:checked:hover + .hamburger > div {
     transform: rotate(225deg);
   }
   
-  /* Show Menu */
+  /* fazer o menu visivel */
   .menu-wrap .toggler:checked ~ .menu {
     visibility: visible;
   }
@@ -171,46 +147,37 @@
     transform: scale(1);
     transition-duration: var(--menu-speed);
   }
-  
+  /*formatação da velocidade e opacidad dos links_nav */
   .menu-wrap .toggler:checked ~ .menu > div > div {
     opacity: 1;
-    transition:  opacity 0.4s ease 0.4s;
+    transition:  opacity 0.4s ease .0.4s;
   }
   
+   /*posição do circulo */
   .menu-wrap .menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    visibility: hidden;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+  /*formatação do circulo */
   .menu-wrap .menu > div {
     background: var(--overlay-color);
     border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
+    width: 400vw;
+    height: 400vw;
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center;
     transform: scale(0);
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
   }
-  
-  .menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
-  
+ 
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
