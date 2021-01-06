@@ -111,7 +111,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   float: right;
-  background-color: rgba(0, 0, 255, 0.062);
+  background-color: grey;
   text-align: center;
   border-radius: 45px;
   width: 50;
@@ -160,5 +160,11 @@ main {
   .inicioatividade p {
     text-align: center;
   }
+}
+
+input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #e8f9fc;
 }
 /*# sourceMappingURL=Qsomoscss.css.map */
