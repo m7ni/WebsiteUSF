@@ -145,5 +145,20 @@ main {
   .valores p {
     text-align: center;
   }
+  .coordenador p {
+    text-align: center;
+  }
+  .ConselhoTecnico p {
+    text-align: center;
+  }
+  .ars p {
+    text-align: center;
+  }
+  .modelo p {
+    text-align: center;
+  }
+  .inicioatividade p {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=Qsomoscss.css.map */
