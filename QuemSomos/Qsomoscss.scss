@@ -10,18 +10,20 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+
 }
 
 .mvv{
     display: flex;
     margin-top:1px;
     margin-left: 20px;
-   
     padding-left: $paddinghorizontal;
     padding-right: $paddinghorizontal;
     padding-top: 15px;
     flex-direction: column;
-    background-color: rgba(137, 43, 226, 0.096);
 }
 
 
@@ -86,22 +88,22 @@ main{
     display: flex;
     margin-top:1px;
     margin-left:2%;
-    margin-right:20px;
     height: 100%;
     padding-left: $paddinghorizontal;
-    padding-right: $paddinghorizontal;
     padding-top: 15px;
     flex-direction: column;
-    background-color: grey;
     text-align: center;
     border-radius: 45px;
     width: 150%;
     justify-content: space-between;
+    
 }
 .formulario{
-    background-color:rgba(137, 43, 226, 0.281);
-    border-radius: 45px;
+    margin-top:20px;
+    margin-bottom:20px;
     padding: $paddinghorizontal ;
+    background-color: rgb(232, 249, 252);
+    margin-right: 13px;
 }
 .mapa{
     display: flex;
@@ -116,8 +118,34 @@ input{
     border: none;
     background: none;
     border-bottom: 1px solid #e8f9fc;
-
 }
+.informações{
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    background-color: rgb(232, 249, 252);
+    margin-right: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+    
+    
+   
+}
+.informações h3,.informações h4{
+    margin-bottom: $spacetitulobtm;
+    text-align: right;
+}
+.informações h4{
+    color: #696969;
+}
+.informações p{
+    margin-right: $paragrafomargem;
+    text-align: right;
+    
+}
+
 
 @media only screen and (max-width: 1000px){
     main{
@@ -125,15 +153,15 @@ input{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-    }
+        margin-left: 0px;
+        margin-right: 0px; 
+        }
     .mvv{
         display: flex;
         flex-direction: column;
         margin-top:1px;
         margin-left: 0px;
         padding-top: 15px;
-        background-color: rgba(137, 43, 226, 0.096);
         justify-content: center;
         align-items: center;
     }
@@ -159,7 +187,7 @@ input{
         padding-right: $paddinghorizontal;
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: rgba(137, 43, 226, 0.096);
+        background-color: rgb(232, 249, 252);
     }
     .mvv h3{
         display: flex;
@@ -173,5 +201,28 @@ input{
         text-align: center;
 
     }
+    .informações{
+        display: flex;
+        flex-direction: column;
+        margin-right: 200px;
+        background-color: rgb(232, 249, 252);
+        margin-right: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        align-items: center;
+        text-align: center;
+    }
+    .informações h3,.informações h4{
+        margin-bottom: $spacetitulobtm;
+        text-align: center;
+    }
+    .informações h4{
+        color: #696969;
+    }
+    .informações p{
+        margin-right: $paragrafomargem;
+        text-align: center;
+        
+    }
 }
-

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,6 +10,11 @@ main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .mvv {
@@ -24,7 +30,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(137, 43, 226, 0.096);
 }
 
 .mvv h3 {
@@ -102,16 +107,13 @@ main {
   display: flex;
   margin-top: 1px;
   margin-left: 2%;
-  margin-right: 20px;
   height: 100%;
   padding-left: 15px;
-  padding-right: 15px;
   padding-top: 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: grey;
   text-align: center;
   border-radius: 45px;
   width: 150%;
@@ -121,9 +123,11 @@ main {
 }
 
 .formulario {
-  background-color: rgba(137, 43, 226, 0.281);
-  border-radius: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 15px;
+  background-color: #e8f9fc;
+  margin-right: 13px;
 }
 
 .mapa {
@@ -147,6 +151,36 @@ input {
   border-bottom: 1px solid #e8f9fc;
 }
 
+.informações {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 200px;
+  background-color: #e8f9fc;
+  margin-right: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.informações h3, .informações h4 {
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.informações h4 {
+  color: #696969;
+}
+
+.informações p {
+  margin-right: 7px;
+  text-align: right;
+}
+
 @media only screen and (max-width: 1000px) {
   main {
     display: -webkit-box;
@@ -162,6 +196,8 @@ input {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .mvv {
     display: -webkit-box;
@@ -174,7 +210,6 @@ input {
     margin-top: 1px;
     margin-left: 0px;
     padding-top: 15px;
-    background-color: rgba(137, 43, 226, 0.096);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -219,7 +254,7 @@ input {
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: rgba(137, 43, 226, 0.096);
+    background-color: #e8f9fc;
   }
   .mvv h3 {
     display: -webkit-box;
@@ -244,6 +279,36 @@ input {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
+  }
+  .informações {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 200px;
+    background-color: #e8f9fc;
+    margin-right: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .informações h3, .informações h4 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .informações h4 {
+    color: #696969;
+  }
+  .informações p {
+    margin-right: 7px;
     text-align: center;
   }
 }

@@ -6,21 +6,26 @@
 
 body{
   font-family: 'Poppins',sans-serif;
-  background-color: rgb(232, 249, 252);
+ 
   margin-top: 0;
   padding: 0;
+  
 }
 
 header{
-  height: 10vh;
-  max-height: 100%vh;
+  height: 11vh;
+  max-height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  background-color: rgb(232, 249, 252);
+  margin-left: 0px;
+  margin-right: 0px;
+
  
 }
 .logoUSF{
-  margin-left: 15px;
+  margin-left: 16px;
   padding: 1px;
   width: 10vh;
   height: 10vh;
@@ -32,6 +37,7 @@ header{
   width: max-content;
   height: max-content;
   max-height: 10vh;
+
     
 }
 :root {
@@ -43,7 +49,7 @@ header{
 .container {
   max-width: 100%;
   margin: auto;
-  overflow: hidden;
+  overflow:hidden ;
   padding: 0 3rem;
 }
 
@@ -66,15 +72,15 @@ header{
 /* MENU STYLES */
 .menu-wrap {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 16px;
   z-index: 1;
 }
 
 .menu-wrap .toggler {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
   z-index: 2;
   cursor: pointer;
   width: 10vh;
@@ -94,6 +100,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 
 /* Hamburger Line */
@@ -210,7 +217,7 @@ ul {
 
 #dropdown.active{
   display:block ;
-  margin-top: 3vh;
+  margin-top: 2vh;
   font-size: 22px;
 }
 
@@ -224,7 +231,7 @@ a.links_nav::after{
   content:'';
   display:block;
   width: 0;
-  height: 3px;
+  height: 2px;
   margin: 2px;
   background: black;
   transition: 0.5;
@@ -237,7 +244,7 @@ a.links_nav:hover::after{
 
 #menu1 >li{
   display: inline-block;
-  transition: all 0.4 ease;
+  transition: all 0.4s ease;
 }
 #dropdown{
   display: none;
@@ -245,7 +252,7 @@ a.links_nav:hover::after{
 }
 #menu1 p:hover{
   cursor:pointer;
-  color: aquamarine;
+  color: black;
 }
 a.links_nav{
   text-decoration: none;
