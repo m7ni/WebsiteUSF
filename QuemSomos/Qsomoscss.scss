@@ -9,21 +9,21 @@ $marginhorizontal:15px;
 main{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .mvv{
-   
     display: flex;
-    margin-top:10vh;
-    width: 50%;
-    height: 100%;
+    margin-top:1px;
+    margin-left: 20px;
+   
     padding-left: $paddinghorizontal;
     padding-right: $paddinghorizontal;
-    margin-right:$marginhorizontal;
     padding-top: 15px;
     flex-direction: column;
     background-color: rgba(137, 43, 226, 0.096);
 }
+
 
 .mvv h3{
     margin-bottom: $spacetitulobtm;
@@ -82,61 +82,36 @@ main{
 .aces p{
     margin-left: $paragrafomargem;
 }
-.formulario{
+.segundaparte{
     display: flex;
-    margin-top:10vh;
-    margin-right:0px;
-    margin-left:20px;
+    margin-top:1px;
+    margin-left:2%;
+    margin-right:20px;
     height: 100%;
     padding-left: $paddinghorizontal;
     padding-right: $paddinghorizontal;
     padding-top: 15px;
     flex-direction: column;
-    float: right;
     background-color: grey;
     text-align: center;
     border-radius: 45px;
-    width: 50;
+    width: 150%;
+    justify-content: space-between;
 }
-.formulario label{
+.formulario{
+    background-color:rgba(137, 43, 226, 0.281);
+    border-radius: 45px;
+    padding: $paddinghorizontal ;
+}
+.mapa{
     display: flex;
+    margin-top: 9vh;
     flex-direction: column;
-
+    align-items: center;
+    padding-bottom: $paddinghorizontal ;
+ 
     
-
 }
-@media only screen and (max-width: 1000px){
-    main{
-        display:flex;
-        flex-direction: column;
-    }
-    .mvv{
-        width: 100%;
-        margin-right: 0%;
-        text-align: center;
-    }
-    .valores p{
-        text-align: center;
-    }
-    .coordenador p{
-        text-align: center;
-    }
-    .ConselhoTecnico p{
-        text-align: center;
-        
-    }
-    .ars p{
-        text-align: center;
-    }
-    .modelo p{
-        text-align: center;
-    }
-    .inicioatividade p{
-        text-align: center;
-    }
-}
-  
-
 input{
     border: none;
     background: none;
@@ -144,6 +119,59 @@ input{
 
 }
 
-button{
-    
+@media only screen and (max-width: 1000px){
+    main{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .mvv{
+        display: flex;
+        flex-direction: column;
+        margin-top:10vh;
+        margin-left: 0px;
+        padding-top: 15px;
+        background-color: rgba(137, 43, 226, 0.096);
+        justify-content: center;
+        align-items: center;
+    }
+    div.mvv{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .segundaparte{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 2px;
+        
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        margin-top:2vh;
+        padding-left: $paddinghorizontal;
+        padding-right: $paddinghorizontal;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgba(137, 43, 226, 0.096);
+    }
+    .mvv h3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mvv p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
 }
+
