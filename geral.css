@@ -216,11 +216,29 @@ ul {
 }
 
 #dropdown.active{
-  display:block ;
-  margin-top: 2vh;
+  display:block;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   font-size: 22px;
 }
 
+#menu1 >li{
+  display: inline-block;
+  transition: all 0.4 ease;
+}
+#dropdown{
+  display: none;
+
+}
+#menu1 p:hover{
+  cursor:pointer;
+  color:black;
+  transition: 0.5s ease;
+}
+a.links_nav{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 a.links_nav.active{
   display:block ;
   margin-top: 3vh;
@@ -254,7 +272,9 @@ a.links_nav:hover::after{
   cursor:pointer;
   color: black;
 }
-a.links_nav{
+a.links_nav2{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);}
+a.links_nav2{
+  border: 1px solid black;
 }
