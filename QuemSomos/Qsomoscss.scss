@@ -6,6 +6,11 @@ $paddinghorizontal:15px;
 $marginhorizontal:15px;
 
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
 main{
     display: flex;
     flex-direction: row;
@@ -86,7 +91,7 @@ main{
 }
 .segundaparte{
     display: flex;
-    margin-top:1px;
+    margin-top:20px;
     margin-left:2%;
     height: 100%;
     padding-left: $paddinghorizontal;
@@ -97,6 +102,7 @@ main{
     width: 150%;
     justify-content: space-between;
     
+    
 }
 .formulario{
     margin-top:20px;
@@ -104,6 +110,7 @@ main{
     padding: $paddinghorizontal ;
     background-color: rgb(232, 249, 252);
     margin-right: 13px;
+    
 }
 .mapa{
     display: flex;
@@ -114,10 +121,21 @@ main{
  
     
 }
-input{
-    border: none;
+#mensagem{
+    
     background: none;
-    border-bottom: 1px solid #e8f9fc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+input,textarea{
+    
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
 }
 .informações{
     display: flex;
@@ -128,10 +146,7 @@ input{
     padding-right: 15px;
     padding-bottom: 15px;
     padding-top: 15px;
-    
-    
-    
-   
+
 }
 .informações h3,.informações h4{
     margin-bottom: $spacetitulobtm;
@@ -143,8 +158,14 @@ input{
 .informações p{
     margin-right: $paragrafomargem;
     text-align: right;
-    
 }
+select,button{
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
 
 
 @media only screen and (max-width: 1000px){

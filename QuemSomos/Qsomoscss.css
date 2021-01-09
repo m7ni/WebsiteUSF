@@ -1,4 +1,11 @@
 @charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,7 +112,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1px;
+  margin-top: 20px;
   margin-left: 2%;
   height: 100%;
   padding-left: 15px;
@@ -145,10 +152,20 @@ main {
   padding-bottom: 15px;
 }
 
-input {
-  border: none;
+#mensagem {
   background: none;
-  border-bottom: 1px solid #e8f9fc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+input, textarea {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
 }
 
 .informações {
@@ -179,6 +196,13 @@ input {
 .informações p {
   margin-right: 7px;
   text-align: right;
+}
+
+select, button {
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid black;
 }
 
 @media only screen and (max-width: 1000px) {
