@@ -234,7 +234,10 @@ ul {
   cursor:pointer;
   color:black;
   transition: 0.5s ease;
+ 
+
 }
+
 a.links_nav{
   text-decoration: none;
   color: rgb(255, 255, 255);

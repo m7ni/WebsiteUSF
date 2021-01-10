@@ -164,8 +164,14 @@ input, textarea {
   background: none;
   border-top: none;
   border-left: none;
+  padding-left: 3px;
   border-right: none;
   border-bottom: 1px solid black;
+  width: 200px;
+}
+
+textarea {
+  height: 60px;
 }
 
 .informações {
