@@ -4,35 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="IndicadoresCSS.css" rel="stylesheet">
     <link href="/geral.css" rel="stylesheet">
-    
+    <link href="/Indicadores/indicadoresscss.css" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <div class="logoUSF">
-           <a href="/HomePage/HomePage.html"> <img class="imglogo" src="../HomePage/logoUSF.png" alt="logoUSF" width="80vh"></a>
-        </div>
-    <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
-      <div>
-        <div>
-            <ul class="links_nav">
-                <li><a class="links_nav" href="../HomePage/Homepage.html">Página Inicial</a></li>
-                <li><a class="links_nav" href="../QuemSomos/QuemSomos.html">Quem Somos</a></li>
-                <li><a class="links_nav" href="../OQueFazemos/OQueFazemos.html">O Que Fazemos</a></li>
-                <li><a class="links_nav" href="/OQueFazemos/Consultas/consultas.html">Consultas</a></li>
-                <li><a class="links_nav" href="../Indicadores/Indicadores.html">Indicadores</a></li>
-                <li><a class="links_nav" href="../Recursos/Recursos.html">Recursos</a></li>
-                <li><a class="links_nav" href="../MaisApoio/MaisApoio.html">Mais Apoio</a></li>
-                <li><a class="links_nav" href="../Login/Login.html">Login</a></li>
-            </ul>
-        </div>
-      </div>
+  <header>
+    <div class="logoUSF">
+      <a href="/HomePage/HomePage.html"> <img class="imglogo" src="../HomePage/logoUSF.png" alt="logoUSF" width="80vh"></a>
+    </div>
+<div class="menu-wrap">
+<input type="checkbox" class="toggler">
+<div class="hamburger"><div></div></div>
+<div class="menu">
+  <div>
+    <div>
+        <ul class="links_nav">
+            <li><a class="links_nav" href="../HomePage/Homepage.html">Página Inicial</a></li>
+            <li><a class="links_nav" href="../QuemSomos/QuemSomos.html">Quem Somos</a></li>
+            <li id="menu1">
+             <p> O Nosso Trabalho</p>
+                <ul id="dropdown">
+                  <li><a class="links_nav" href="../OQueFazemos/OQueFazemos.html">O Que Fazemos</a>
+                    <br>
+                    <li><a class="links_nav" href="/OQueFazemos/Consultas/consultas.html">Consultas</a></li>
+                </ul>                       
+            </li>
+            <li><a class="links_nav" href="../Indicadores/Indicadores.html">Indicadores</a></li>
+            <li><a class="links_nav" href="../Recursos/Recursos.html">Recursos</a></li>
+            <li><a class="links_nav" href="../MaisApoio/MaisApoio.html">Mais Apoio</a></li>
+            <li><a class="links_nav" href="../Login/Login.html">Login</a></li>
+        </ul>
     </div>
   </div>
-  </header>
+</div>
+</div>
+</header>
+  <main>
+    <div class="indicadores">
+      <div class="indicadores1">
+      <div class="indicador_sexo">
+        <h3 class="titulo1">Sexo</h3>
+        <p class="paragrafo1">A USF Rio Dão no Centro de Saúde de Santa Comba Dão,
+           único centro de saúde ativo, recebeu em 2020 um total de 400 Utentes, dos quais
+          253 eram do sexo masculino, 132 do sexo feminino e 15 de outro.</p>
+        <div id="sexo_graph"></div>
+      </div>
+      <div class="indicador_idade">
+        <h3 class="titulo2">Idade</h3>
+        <p class="paragrafo2">No ano de 2020, dos 400 utentes recebidos no Centro de Saúde de Santa Comba dão, foram recebidos 400 utentes, dos quais <b> 25</b> tinham idades compreendidas entre os 0 e 5 anos, <b> 40</b> entre os 6 e 10 anos, <b> 71 </b>entre os 11 e 18 anos, <b>60</b> entre os 19 e 35, <b>90</b> entre os 36 e 50, <b>86</b> entre os 51 e 65, <b>28</b> entre os 66 e os 100.</p>
+        <div id="idade_graph"></div>
+      </div>
+      <!--<div class="indicadores2">
+        <div class="indicadorsexo">
+          <h3 class="titulo1">Sexo</h3>
+          <p class="paragrafo1">A USF Rio Dão no Centro de Saúde de Santa Comba Dão,
+             único centro de saúde ativo, recebeu em 2020 um total de 400 Utentes, dos quais
+            253 eram do sexo masculino, 132 do sexo feminino e 15 de outro.</p>
+          <div id="sexo_graph"></div>
+        </div>
+        <div class="indicadoridade">
+          <h3 class="titulo2">Idade</h3>
+          <p class="paragrafo2">No ano de 2020, dos 400 utentes recebidos no Centro de Saúde de Santa Comba dão, foram recebidos 400 utentes, dos quais <b> 25</b> tinham idades compreendidas entre os 0 e 5 anos, <b> 40</b> entre os 6 e 10 anos, <b> 71 </b>entre os 11 e 18 anos, <b>60</b> entre os 19 e 35, <b>90</b> entre os 36 e 50, <b>86</b> entre os 51 e 65, <b>28</b> entre os 66 e os 100.</p>
+          <div id="idade_graph"></div>
+        </div>
+        <div class="indicadores3">
+          <div class="indicadorsexo">
+            <h3 class="titulo1">Sexo</h3>
+            <p class="paragrafo1">A USF Rio Dão no Centro de Saúde de Santa Comba Dão,
+               único centro de saúde ativo, recebeu em 2020 um total de 400 Utentes, dos quais
+              253 eram do sexo masculino, 132 do sexo feminino e 15 de outro.</p>
+            <div id="sexo_graph"></div>
+          </div>
+          <div class="indicadoridade">
+            <h3 class="titulo2">Idade</h3>
+            <p class="paragrafo2">No ano de 2020, dos 400 utentes recebidos no Centro de Saúde de Santa Comba dão, foram recebidos 400 utentes, dos quais <b> 25</b> tinham idades compreendidas entre os 0 e 5 anos, <b> 40</b> entre os 6 e 10 anos, <b> 71 </b>entre os 11 e 18 anos, <b>60</b> entre os 19 e 35, <b>90</b> entre os 36 e 50, <b>86</b> entre os 51 e 65, <b>28</b> entre os 66 e os 100.</p>
+            <div id="idade_graph"></div>
+          </div>-->
+    </div>
+  </div>
+  </main>
+  <script src="/geral.js"> </script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script  type="text/javascript" src="/Indicadores/Indicadoresjava.js"> </script>
 </body>
+
 </html>
