@@ -1,0 +1,43 @@
+body {
+  background: #fcaf17;
+  background: -webkit-gradient(linear, left top, right top, from(#fcaf17), to(#fffb61));
+  background: linear-gradient(90deg, #fcaf17 0%, #fffb61 100%);
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  height: 100%;
+}
+
+.sucesso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e8f9fc;
+  width: 50%;
+  border-radius: 45px;
+  height: 400px;
+  max-height: 400px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10%;
+  border: 1px solid #fcaf17;
+}
+
+.sucesso h3 {
+  font-size: 40px;
+  color: #fcaf17;
+}
+/*# sourceMappingURL=logincertocss.css.map */

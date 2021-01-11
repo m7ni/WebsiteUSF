@@ -137,21 +137,6 @@ main {
   margin-right: 13px;
 }
 
-.mapa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 9vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 15px;
-}
-
 #mensagem {
   background: none;
   border-top: none;
@@ -161,17 +146,18 @@ main {
 }
 
 input, textarea {
-  background: none;
-  border-top: none;
-  border-left: none;
-  padding-left: 3px;
-  border-right: none;
-  border-bottom: 1px solid black;
-  width: 200px;
+  border-radius: 52px;
+  border: 1px solid #fcaf17;
+  padding: 5px;
+  color: black;
+  outline: none;
+  width: 30%;
+  position: relative;
 }
 
 textarea {
   height: 60px;
+  padding: 20px;
 }
 
 .informações {
@@ -204,11 +190,28 @@ textarea {
   text-align: right;
 }
 
-select, button {
-  border-radius: 5px;
-  background-color: transparent;
+select {
+  border-radius: 52px;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #fcaf17;
+  padding: 5px;
+  background-color: #fcaf17;
+  color: white;
+  outline: none;
+  width: 20%;
+  position: relative;
+}
+
+button {
+  border-radius: 52px;
+  cursor: pointer;
+  border: 1px solid #fcaf17;
+  padding: 5px;
+  background-color: #fcaf17;
+  color: white;
+  outline: none;
+  width: 15%;
+  position: relative;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -340,6 +343,332 @@ select, button {
   .informações p {
     margin-right: 7px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .mvv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1px;
+    margin-left: 0px;
+    padding-top: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.mvv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .segundaparte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 2px;
+  }
+  .formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #e8f9fc;
+  }
+  .mvv h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mvv p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .informações {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 200px;
+    background-color: #e8f9fc;
+    margin-right: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .informações h3, .informações h4 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .informações h4 {
+    color: #696969;
+  }
+  .informações p {
+    margin-right: 7px;
+    text-align: center;
+  }
+  button {
+    border-radius: 52px;
+    cursor: pointer;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    background-color: #fcaf17;
+    color: white;
+    outline: none;
+    width: 25%;
+    position: relative;
+  }
+  input, textarea {
+    border-radius: 52px;
+    border: 1px solid #fcaf17;
+    padding: 9px;
+    color: black;
+    outline: none;
+    width: 50%;
+    position: relative;
+  }
+  select {
+    border-radius: 52px;
+    cursor: pointer;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    background-color: #fcaf17;
+    color: white;
+    outline: none;
+    width: 40%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .mvv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1px;
+    margin-left: 0px;
+    padding-top: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.mvv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .segundaparte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 2px;
+  }
+  .formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #e8f9fc;
+  }
+  .mvv h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mvv p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .informações {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 200px;
+    background-color: #e8f9fc;
+    margin-right: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .informações h3, .informações h4 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .informações h4 {
+    color: #696969;
+  }
+  .informações p {
+    margin-right: 7px;
+    text-align: center;
+  }
+  button {
+    border-radius: 52px;
+    cursor: pointer;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    background-color: #fcaf17;
+    color: white;
+    outline: none;
+    width: 30%;
+    position: relative;
+  }
+  input, textarea {
+    border-radius: 52px;
+    border: 1px solid #fcaf17;
+    padding: 9px;
+    color: black;
+    outline: none;
+    width: 90%;
+    position: relative;
+  }
+  select {
+    border-radius: 52px;
+    cursor: pointer;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    background-color: #fcaf17;
+    color: white;
+    outline: none;
+    width: 40%;
+    position: relative;
   }
 }
 /*# sourceMappingURL=Qsomoscss.css.map */

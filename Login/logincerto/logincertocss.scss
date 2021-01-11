@@ -1,0 +1,33 @@
+body{
+    background: rgb(252,175,23);
+    background: linear-gradient(90deg, rgba(252,175,23,1) 0%, rgba(255,251,97,1) 100%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 100%;
+    
+
+}
+.sucesso{
+ display: flex;
+ background-color: rgb(232, 249, 252);
+ width: 50%;
+ border-radius: 45px;
+ height: 400px;
+ max-height: 400px;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10%;
+ border:1px solid #fcaf17;
+
+ 
+}
+.sucesso h3{
+  font-size: 40px;
+  color:#fcaf17;
+}
