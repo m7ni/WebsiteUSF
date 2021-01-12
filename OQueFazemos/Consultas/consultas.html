@@ -11,7 +11,7 @@
 <body>
   <header>
     <div class="logoUSF">
-      <a href="/HomePage/HomePage.html"> <img class="imglogo" src="../HomePage/logoUSF.png" alt="logoUSF" width="80vh"></a>
+      <a href="/HomePage/HomePage.html"> <img class="imglogo" src="/HomePage/logoUSF.png" alt="logoUSF" width="80vh"></a>
     </div>
 <div class="menu-wrap">
 <input type="checkbox" class="toggler">
@@ -22,8 +22,7 @@
         <ul class="links_nav">
             <li><a class="links_nav" href="../HomePage/Homepage.html">Página Inicial</a></li>
             <li><a class="links_nav" href="../QuemSomos/QuemSomos.html">Quem Somos</a></li>
-            <li id="menu1">
-             <p> O Nosso Trabalho</p>
+            <li id="menu1"><a class="links_nav">O Nosso Trabalho</a></li>
                 <ul id="dropdown">
                   <li><a class="links_nav" href="../OQueFazemos/OQueFazemos.html">O Que Fazemos</a>
                     <br>
@@ -40,6 +39,40 @@
 </div>
 </div>
 </header>
-    
+    <div class="formulario">
+      <h2>Para escolher o seu médico de família, preencha o seguinte formulário.</h2>
+      <form>
+        <input type="text" id="pnome" placeholder="Nome" name="pnome" maxlength="20" required><br><br>
+
+        <input type="text" id="unome" placeholder="Apelido" name="unome" maxlength="20" required><br><br>
+        
+        <select>
+          <option value="1">Masculino</option>
+          <option value="2">Feminino</option>
+          <option value="2">Outro</option>
+      </select><br><br>
+
+        <input type="text" id="cc" placeholder="Nº ID Civil" maxlength="12" required><br><br>
+        
+        <input type="number" id="idade" placeholder="Idade" maxlength="3" required><br><br>
+
+        <input type="email" id="email" placeholder="E-mail" required><br><br>
+
+        <input type="morada" id="morada" placeholder="Morada" required><br><br>
+
+        <textarea type="info" id="info" placeholder="Informação que considere importante"></textarea><br><br>
+
+        <select>
+          <option value="1">Diogo Carmo</option>
+          <option value="1">Sabrina Matos</option>
+          <option value="1">Maria Oliveira</option>
+          <option value="1">Mafalda Santos</option>
+        </select><br><br>
+
+        <button>Submeter</button>
+
+        <button type="reset">Limpar</button>
+      </form>
+    </div>
 </body>
 </html>

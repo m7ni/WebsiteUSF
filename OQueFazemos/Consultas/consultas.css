@@ -1,1 +1,174 @@
-/* No CSS *//*# sourceMappingURL=consultas.css.map */
+h2 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin: 20px;
+}
+
+.formulario {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #e8f9fc;
+  margin-right: 70px;
+  margin-left: 70px;
+  border-radius: 30px;
+}
+
+input, textarea {
+  border-radius: 52px;
+  border: 1px solid #fcaf17;
+  padding: 5px;
+  color: black;
+  outline: none;
+  width: 30%;
+  position: relative;
+}
+
+textarea {
+  height: 60px;
+  padding: 20px;
+}
+
+select {
+  border-radius: 52px;
+  cursor: pointer;
+  border: 1px solid #fcaf17;
+  padding: 5px;
+  background-color: #fcaf17;
+  color: white;
+  outline: none;
+  width: 20%;
+  position: relative;
+}
+
+button {
+  border-radius: 52px;
+  cursor: pointer;
+  border: 1px solid #fcaf17;
+  padding: 5px;
+  background-color: #fcaf17;
+  color: white;
+  outline: none;
+  width: 15%;
+  position: relative;
+}
+
+@media only screen and (max-width: 1300px) {
+  .formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #e8f9fc;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #e8f9fc;
+  }
+  button {
+    border-radius: 52px;
+    cursor: pointer;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    background-color: #fcaf17;
+    color: white;
+    outline: none;
+    width: 25%;
+    position: relative;
+  }
+  input, textarea {
+    border-radius: 52px;
+    border: 1px solid #fcaf17;
+    padding: 9px;
+    color: black;
+    outline: none;
+    width: 50%;
+    position: relative;
+  }
+  select {
+    border-radius: 52px;
+    cursor: pointer;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    background-color: #fcaf17;
+    color: white;
+    outline: none;
+    width: 40%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #e8f9fc;
+  }
+  button {
+    border-radius: 52px;
+    cursor: pointer;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    background-color: #fcaf17;
+    color: white;
+    outline: none;
+    width: 30%;
+    position: relative;
+  }
+  input, textarea {
+    border-radius: 52px;
+    border: 1px solid #fcaf17;
+    padding: 9px;
+    color: black;
+    outline: none;
+    width: 90%;
+    position: relative;
+  }
+  select {
+    border-radius: 52px;
+    cursor: pointer;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    background-color: #fcaf17;
+    color: white;
+    outline: none;
+    width: 40%;
+    position: relative;
+  }
+}
+/*# sourceMappingURL=consultas.css.map */

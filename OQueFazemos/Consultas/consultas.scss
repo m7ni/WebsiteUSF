@@ -1,0 +1,164 @@
+$paragrafomargem: 7px;
+$spaceparagrafo: 30px;
+$spacetitulobtm: 5px;
+$spacetitulotop: 20px;
+$paddinghorizontal:15px;
+$marginhorizontal:15px;
+
+h2{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    margin: 20px;
+}
+
+.formulario{
+    margin-top:20px;
+    margin-bottom:20px;
+    padding: $paddinghorizontal ;
+    background-color: rgb(232, 249, 252);
+    margin-right: 70px;
+    margin-left: 70px;
+    border-radius: 30px;
+    
+}
+
+input,textarea{
+    border-radius: 52px;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    color: black;
+    outline: none;
+    width: 30%;
+    position: relative;
+}
+textarea{
+    height: 60px;
+    padding: 20px;
+}
+
+select{
+    border-radius: 52px;
+    cursor: pointer;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    background-color:#fcaf17 ;
+    color: white;
+    outline: none;
+    width: 20%;
+    position: relative;
+}
+button{
+    border-radius: 52px;
+    cursor: pointer;
+    border: 1px solid #fcaf17;
+    padding: 5px;
+    background-color:#fcaf17 ;
+    color: white;
+    outline: none;
+    width: 15%;
+    position: relative;
+}
+
+@media only screen and (max-width: 1300px){
+    
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        margin-top:2vh;
+        padding-left: $paddinghorizontal;
+        padding-right: $paddinghorizontal;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgb(232, 249, 252);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        margin-top:2vh;
+        padding-left: $paddinghorizontal;
+        padding-right: $paddinghorizontal;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgb(232, 249, 252);
+    }
+    button{
+        border-radius: 52px;
+        cursor: pointer;
+        border: 1px solid #fcaf17;
+        padding: 5px;
+        background-color:#fcaf17 ;
+        color: white;
+        outline: none;
+        width: 25%;
+        position: relative;
+    }
+    input,textarea{
+        border-radius: 52px;
+        border: 1px solid #fcaf17;
+        padding: 9px;
+        color: black;
+        outline: none;
+        width: 50%;
+        position: relative;
+    }
+    select{
+        border-radius: 52px;
+        cursor: pointer;
+        border: 1px solid #fcaf17;
+        padding: 5px;
+        background-color:#fcaf17 ;
+        color: white;
+        outline: none;
+        width: 40%;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 400px){
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        margin-top:2vh;
+        padding-left: $paddinghorizontal;
+        padding-right: $paddinghorizontal;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgb(232, 249, 252);
+    }
+    button{
+        border-radius: 52px;
+        cursor: pointer;
+        border: 1px solid #fcaf17;
+        padding: 5px;
+        background-color:#fcaf17 ;
+        color: white;
+        outline: none;
+        width: 30%;
+        position: relative;
+    }
+    input,textarea{
+        border-radius: 52px;
+        border: 1px solid #fcaf17;
+        padding: 9px;
+        color: black;
+        outline: none;
+        width: 90%;
+        position: relative;
+    }
+    select{
+        border-radius: 52px;
+        cursor: pointer;
+        border: 1px solid #fcaf17;
+        padding: 5px;
+        background-color:#fcaf17 ;
+        color: white;
+        outline: none;
+        width: 40%;
+        position: relative;
+    }
+}
