@@ -1,29 +1,67 @@
-h1{
-    text-align: center;
-}
-.secondmain{
+  h1 {
     text-align: center;
     margin-top: 20px;
-    margin-left: 70px;
-    background-color:  #e8f9fc;
-    text-align: center;
-    margin: 10px;
-}
-img{
-    display: flex;
-}
-
-@keyframes animate{
-    0%, 100%{
-        background-image: url(/OQueFazemos/mascaras/mascaras.jpg);
-    }
-    25%{
-        background-image: url(/OQueFazemos/mascaras/mascaras2.jpg);
-    }
-    50%{
-        background-image: url(/OQueFazemos/mascaras/mascaras3.jpg);
-    }
-    75%{
-        background-image: url(/OQueFazemos/mascaras/mascaras4.jpg);
-    }
   }
+  
+  .secondmain {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: #e8f9fc;
+    text-align: center;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .img {
+    display: flex;
+    align-items: center;
+  }
+  
+  .texto{
+      padding-top: 30px;
+      padding-left: 450px;
+      padding-right: 30px;
+  }
+
+  p{
+      float: right;
+      text-align: justify;
+      text-indent: 40px;
+  }
+
+  .fourthmain {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: #e8f9fc;
+    text-align: center;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .img2 {
+    display: flex;
+    align-items: center;
+    margin-left: 1280px;
+  }
+  
+  .texto2{
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+
+  .p2{
+      float: right;
+      margin-top: -265px;
+      line-height: 20px;
+      margin-right: 470px;
+      text-align: justify;
+  }
+
+  
