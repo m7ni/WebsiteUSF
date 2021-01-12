@@ -1,3 +1,4 @@
+/*Primeira imagem e texto*/
 h1 {
   text-align: center;
   margin-top: 20px;
@@ -36,6 +37,7 @@ p {
   text-indent: 40px;
 }
 
+/*Segunda imagem e texto*/
 .fourthmain {
   text-align: center;
   margin-top: 20px;
@@ -70,5 +72,40 @@ p {
   line-height: 20px;
   margin-right: 470px;
   text-align: justify;
+}
+
+/*Terceira imagem e texto*/
+.sixthmain {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  background-color: #e8f9fc;
+  text-align: center;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.img3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.texto3 {
+  padding-top: 30px;
+  padding-left: 450px;
+  padding-right: 30px;
+}
+
+.p3 {
+  float: right;
+  text-align: justify;
+  text-indent: 40px;
+  line-height: 20px;
 }
 /*# sourceMappingURL=OQueFazemosSASS.css.map */
