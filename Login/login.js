@@ -30,8 +30,11 @@ function validação() {
         location.href = "/Login/logincerto/logincerto.html";
 
     }
-    else {
+    else if(pw=="") {
 
+        document.getElementById("errado2").style.visibility = "visible";
+    }
+    else{
         document.getElementById("errado").style.visibility = "visible";
     }
 };

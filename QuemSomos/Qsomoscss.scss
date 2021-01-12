@@ -180,7 +180,7 @@ button{
 
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1300px){
     main{
         display:flex;
         flex-direction: column;
@@ -400,6 +400,7 @@ button{
         margin-right: 0px;
         margin-top: 2px;
         
+        
     }
     .formulario{
         display: flex;
@@ -429,7 +430,7 @@ button{
         margin-right: 200px;
         background-color: rgb(232, 249, 252);
         margin-right: 15px;
-        padding-right: 15px;
+        padding-right: 0px;
         padding-bottom: 15px;
         padding-top: 15px;
         align-items: center;
@@ -443,10 +444,11 @@ button{
         color: #696969;
     }
     .informações p{
-        margin-right: $paragrafomargem;
+        margin-right: 0px;
         text-align: center;
         
     }
+    
     button{
         border-radius: 52px;
         cursor: pointer;
