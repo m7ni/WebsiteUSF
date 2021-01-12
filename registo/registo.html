@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="/Login/loginscss.css" rel="stylesheet">
   <link href="/geral.css" rel="stylesheet">
-  <link href="/fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
-
+  <link href="/registo/registo.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,24 +47,28 @@
   <main>
     <div class="login">
       <div class="login1">
-        <h2>LOGIN</h2>
+        <h2>REGISTO</h2>
         <div class="login2">
           <br>
           <form id="form" method="POST">
             <div class="simbolo">
               <label id="errado"><i class="far fa-times-circle"></i></label>
+              <input type="text" id="username" placeholder="Username" required>
+              <br>
               <input type="email" id="email" placeholder="Endereço de Email" required>
-            </div>
-            <br>
-            <input type="password" id="password" placeholder="Password" maxlength="20" required><br><br>
-            <button onclick="validação()" type="button" id="login">LOGIN</button>
+              <br>
+
+              <input type="password" id="password" placeholder="Password" maxlength="20" required><br>
+
+            
             <button type="button" id="registo">REGISTAR</button>
+          </div>
           </form>
         </div>
       </div>
     </div>
   </main>
   <script src="/geral.js"> </script>
-  <script src="/Login/login.js"> </script>
 </body>
+
 </html>
