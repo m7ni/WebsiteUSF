@@ -7,7 +7,23 @@ h1{
     margin-left: 70px;
     background-color:  #e8f9fc;
     text-align: center;
+    margin: 10px;
 }
 img{
     display: flex;
 }
+
+@keyframes animate{
+    0%, 100%{
+        background-image: url(/OQueFazemos/mascaras/mascaras.jpg);
+    }
+    25%{
+        background-image: url(/OQueFazemos/mascaras/mascaras2.jpg);
+    }
+    50%{
+        background-image: url(/OQueFazemos/mascaras/mascaras3.jpg);
+    }
+    75%{
+        background-image: url(/OQueFazemos/mascaras/mascaras4.jpg);
+    }
+  }
