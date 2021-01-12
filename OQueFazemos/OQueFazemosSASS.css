@@ -108,4 +108,8 @@ p {
   text-indent: 40px;
   line-height: 20px;
 }
+
+.links_nav {
+  cursor: pointer;
+}
 /*# sourceMappingURL=OQueFazemosSASS.css.map */

@@ -277,7 +277,12 @@ a.links_nav:hover::after{
 }
 a.links_nav2{
   text-decoration: none;
-  color: rgb(255, 255, 255);}
-a.links_nav2{
+  color: rgb(255, 255, 255);
   border: 1px solid black;
+  align-items: center;
+}
+
+ul#dropdown.active{
+  margin-top: 40px;
+  margin-bottom: -5px;
 }
