@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;CACrB;;AACD,AAAA,WAAW,CAAA;EACP,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,IAAI;EACjB,gBAAgB,EAAG,OAAO;EAC1B,UAAU,EAAE,MAAM;CACrB;;AACD,AAAA,GAAG,CAAA;EACC,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "OQueFazemosSASS.scss"
+    ],
+    "names": [],
+    "file": "OQueFazemosSASS.css"
+}
