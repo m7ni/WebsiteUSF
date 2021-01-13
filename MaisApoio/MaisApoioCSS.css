@@ -120,6 +120,9 @@ main {
     margin-bottom: 5px;
     margin-left: 7px;
   }
+  .farmacias {
+    width: 100%;
+  }
   .farmacias p {
     text-align: center;
     margin-right: 7px;

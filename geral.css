@@ -69,7 +69,7 @@ header{
   opacity: 0.7;
 }
 
-/* MENU STYLES */
+/* menu geral*/
 .menu-wrap {
   position: fixed;
   top: 2px;
@@ -103,7 +103,7 @@ header{
   border-radius: 10px;
 }
 
-/* Hamburger Line */
+/* linhas */
 .menu-wrap .hamburger > div {
   position: relative;
   flex: none;
@@ -114,9 +114,10 @@ header{
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
+ 
 }
 
-/* Hamburger Lines - Top & Bottom */
+/* linhas de cima e de baixo*/
 .menu-wrap .hamburger > div::before,
 .menu-wrap .hamburger > div::after {
   content: '';
@@ -128,27 +129,26 @@ header{
   background: inherit;
 }
 
-/* Moves Line Down */
 .menu-wrap .hamburger > div::after {
   top: 10px;
 }
 
-/* Toggler Animation */
+/* animação quando se usa*/
 
 
-/* Turns Lines Into X */
+/* transforma linhas em X quando se dá check */
 .menu-wrap .toggler:checked + .hamburger > div:before,
 .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
   transform: rotate(90deg);
 }
 
-/* Rotate On Hover When Checked */
+/* animação x quando se dá hover */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
 }
 
-/* Show Menu */
+/* menu */
 .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
