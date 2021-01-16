@@ -3,7 +3,7 @@ window.onload = function () {
     var chart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
         title:{
-            text: "Previsão do número de consultas diárias para os próximos 5 anos"
+            text: "Previsão do número de consultas diárias médias para os próximos 5 anos"
         },
         data: [{        
             type: "line",
