@@ -2,8 +2,9 @@
 .container{
   width: 100%;
   height: 100%;
-  animation: animate 16s ease-in-out infinite;
+  animation: slide 16s ease-in-out infinite;
   background-size: cover;
+  background-position: center;
   position: fixed;
   object-fit: cover;
   }
@@ -29,7 +30,7 @@
   color:#fcaf17;
   max-width: 100%;
 }
-@keyframes animate{
+@keyframes slide{
   0%, 100%{
       background-image: url(/HomePage/recursos/doutor1.jpg);
   }
