@@ -14,127 +14,67 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
 }
 
 .mvv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 1px;
-  margin-left: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 50%;
+  padding-right: 50px;
+  padding-top: 10px;
 }
 
-.mvv h3 {
+.missao h3, .visao h3, .valores h3, .coordenador h3, .ConselhoTecnico h3, .ars h3, .aces h3, .modelo h3, .inicioatividade h3 {
+  text-align: left;
   margin-bottom: 5px;
 }
 
-.mvv p {
-  margin-bottom: 30px;
-}
-
-.missao p {
-  margin-left: 7px;
+.missao p, .visao p, .valores p, .coordenador p, .ConselhoTecnico p, .ars p, .aces p, .modelo p, .inicioatividade p {
   text-align: justify;
-}
-
-.visao p {
-  margin-left: 7px;
-  text-align: justify;
-}
-
-.valores p {
-  margin-left: 7px;
-  text-align: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 2px;
-}
-
-.coordenador p {
-  margin-left: 7px;
-  text-align: justify;
-}
-
-.coordenador h3 {
-  margin-top: 20px;
-}
-
-.ConselhoTecnico p {
-  margin-left: 7px;
-  text-align: justify;
-  margin-bottom: 2px;
-}
-
-.ars h3 {
-  margin-top: 20px;
-}
-
-.ars p {
-  margin-left: 7px;
-  text-align: justify;
-}
-
-.modelo p {
-  margin-left: 7px;
-  text-align: justify;
-}
-
-.inicioatividade p {
-  margin-left: 7px;
-  text-align: justify;
-}
-
-.aces p {
+  margin-bottom: 5px;
   margin-left: 7px;
 }
 
 .segundaparte {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
-  margin-left: 2%;
-  height: 100%;
-  padding-left: 15px;
-  padding-top: 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  border-radius: 45px;
-  width: 150%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.informações {
+  padding-right: 8px;
+  padding-top: 10px;
+  background-color: #e8f9fc;
+}
+
+.sede h3, .polo h3, .sede h4, .polo h4 {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.sede h4, .polo h4 {
+  text-align: right;
+  margin-bottom: 5px;
+  color: #525252;
+}
+
+.sede p, .polo p {
+  text-align: right;
+  margin-bottom: 5px;
+  margin-right: 7px;
 }
 
 .formulario {
+  text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 15px;
+  padding-top: 10px;
   background-color: #e8f9fc;
-  margin-right: 13px;
 }
 
 #mensagem {
@@ -158,36 +98,6 @@ input, textarea {
 textarea {
   height: 60px;
   padding: 20px;
-}
-
-.informações {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 200px;
-  background-color: #e8f9fc;
-  margin-right: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-.informações h3, .informações h4 {
-  margin-bottom: 5px;
-  text-align: right;
-}
-
-.informações h4 {
-  color: #696969;
-}
-
-.informações p {
-  margin-right: 7px;
-  text-align: right;
 }
 
 select {
@@ -214,461 +124,46 @@ button {
   position: relative;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1000px) {
   main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
   }
   .mvv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 1px;
-    margin-left: 0px;
-    padding-top: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  div.mvv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 100%;
   }
   .segundaparte {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 2px;
   }
-  .formulario {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 2vh;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #e8f9fc;
-  }
-  .mvv h3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .mvv p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .missao h3, .visao h3, .valores h3, .coordenador h3, .ConselhoTecnico h3, .ars h3, .aces h3, .modelo h3, .inicioatividade h3 {
     text-align: center;
   }
-  .informações {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 200px;
-    background-color: #e8f9fc;
-    margin-right: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .missao p, .visao p, .valores p, .coordenador p, .ConselhoTecnico p, .ars p, .aces p, .modelo p, .inicioatividade p {
     text-align: center;
   }
-  .informações h3, .informações h4 {
-    margin-bottom: 5px;
+  .sede h3, .polo h3, .sede h4, .polo h4 {
     text-align: center;
   }
-  .informações h4 {
-    color: #696969;
+  .sede h4, .polo h4 {
+    text-align: center;
   }
-  .informações p {
-    margin-right: 7px;
+  .sede p, .polo p {
     text-align: center;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .mvv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 1px;
-    margin-left: 0px;
-    padding-top: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  div.mvv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .segundaparte {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 2px;
-  }
-  .formulario {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 2vh;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #e8f9fc;
-  }
-  .mvv h3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .mvv p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .informações {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 200px;
-    background-color: #e8f9fc;
-    margin-right: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .informações h3, .informações h4 {
-    margin-bottom: 5px;
-    text-align: center;
-  }
-  .informações h4 {
-    color: #696969;
-  }
-  .informações p {
-    margin-right: 7px;
-    text-align: center;
-  }
-  button {
-    border-radius: 52px;
-    cursor: pointer;
-    border: 1px solid #fcaf17;
-    padding: 5px;
-    background-color: #fcaf17;
-    color: white;
-    outline: none;
-    width: 25%;
-    position: relative;
-  }
+@media only screen and (max-width: 550px) {
   input, textarea {
-    border-radius: 52px;
-    border: 1px solid #fcaf17;
-    padding: 9px;
-    color: black;
-    outline: none;
-    width: 50%;
-    position: relative;
-  }
-  select {
-    border-radius: 52px;
-    cursor: pointer;
-    border: 1px solid #fcaf17;
-    padding: 5px;
-    background-color: #fcaf17;
-    color: white;
-    outline: none;
-    width: 40%;
-    position: relative;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .mvv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 1px;
-    margin-left: 0px;
-    padding-top: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  div.mvv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .segundaparte {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 2px;
-  }
-  .formulario {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 2vh;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #e8f9fc;
-  }
-  .mvv h3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .mvv p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .informações {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 200px;
-    background-color: #e8f9fc;
-    margin-right: 15px;
-    padding-right: 0px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .informações h3, .informações h4 {
-    margin-bottom: 5px;
-    text-align: center;
-  }
-  .informações h4 {
-    color: #696969;
-  }
-  .informações p {
-    margin-right: 0px;
-    text-align: center;
-  }
-  button {
-    border-radius: 52px;
-    cursor: pointer;
-    border: 1px solid #fcaf17;
-    padding: 5px;
-    background-color: #fcaf17;
-    color: white;
-    outline: none;
-    width: 30%;
-    position: relative;
-  }
-  input, textarea {
-    border-radius: 52px;
-    border: 1px solid #fcaf17;
-    padding: 9px;
-    color: black;
-    outline: none;
-    width: 90%;
-    position: relative;
-  }
-  select {
-    border-radius: 52px;
-    cursor: pointer;
-    border: 1px solid #fcaf17;
-    padding: 5px;
-    background-color: #fcaf17;
-    color: white;
-    outline: none;
-    width: 40%;
-    position: relative;
+    width: 60%;
   }
 }
 /*# sourceMappingURL=Qsomoscss.css.map */

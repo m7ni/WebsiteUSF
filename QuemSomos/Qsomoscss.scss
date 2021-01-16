@@ -14,112 +14,71 @@ $marginhorizontal:15px;
 main{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
-
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
 }
 
 .mvv{
-    display: flex;
-    margin-top:1px;
-    margin-left: 20px;
-    padding-left: $paddinghorizontal;
-    padding-right: $paddinghorizontal;
-    padding-top: 15px;
-    flex-direction: column;
+    width: 50%;
+    padding-right:50px;
+    padding-top:10px;
 }
 
-
-.mvv h3{
+.missao h3,.visao h3,.valores h3,.coordenador h3,.ConselhoTecnico h3,.ars h3,.aces h3,.modelo h3,.inicioatividade h3{
+    text-align: left;
     margin-bottom: $spacetitulobtm;
 }
-
-.mvv p{
-    margin-bottom: $spaceparagrafo;
-}
-
-.missao p{
-    margin-left: $paragrafomargem;
+.missao p,.visao p,.valores p,.coordenador p,.ConselhoTecnico p,.ars p,.aces p,.modelo p,.inicioatividade p{
     text-align: justify;
+    margin-bottom: $spacetitulobtm;
+    margin-left: $paragrafomargem;
 }
 
-.visao p{
-    margin-left: $paragrafomargem;
-    text-align: justify;
-}
-.valores p{
-    margin-left: $paragrafomargem;
-    text-align: justify;
-    display: flex;
-    flex-direction: column ;
-    margin-bottom: 2px;
-}
-
-.coordenador p{
-    margin-left: $paragrafomargem;
-    text-align: justify;
-}
-.coordenador h3{
-    margin-top: $spacetitulotop;
-}
-.ConselhoTecnico p{
-    margin-left: $paragrafomargem;
-    text-align: justify;
-    margin-bottom: 2px;
-    
-}
-.ars h3{
-   
-    margin-top: $spacetitulotop;
-}
-.ars p{
-    margin-left: $paragrafomargem;
-    text-align: justify;
-}
-.modelo p{
-    margin-left: $paragrafomargem;
-    text-align: justify;
-}
-.inicioatividade p{
-    margin-left: $paragrafomargem;
-    text-align: justify;
-}
-.aces p{
-    margin-left: $paragrafomargem;
-}
 .segundaparte{
+    width: 50%;
     display: flex;
-    margin-top:20px;
-    margin-left:2%;
-    height: 100%;
-    padding-left: $paddinghorizontal;
-    padding-top: 15px;
     flex-direction: column;
-    text-align: center;
-    border-radius: 45px;
-    width: 150%;
-    justify-content: space-between;
-    
-    
 }
-.formulario{
-    margin-top:20px;
-    margin-bottom:20px;
-    padding: $paddinghorizontal ;
+.informações{
+    padding-right:8px;
+    padding-top:10px;
     background-color: rgb(232, 249, 252);
-    margin-right: 13px;
     
+
 }
-#mensagem{
+.sede h3  ,.polo h3, .sede h4  ,.polo h4 {
+    text-align: right;
+    margin-bottom: $spacetitulobtm;
+}
+.sede h4  ,.polo h4 {
+    text-align: right;
+    margin-bottom: $spacetitulobtm;
+    color: rgb(82, 82, 82);
+}
+.sede p ,.polo p {
+    text-align: right;
+    margin-bottom: $spacetitulobtm;
+    margin-right: $paragrafomargem;
+}
+
+
+.formulario{
+ 
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: rgb(232, 249, 252);
+
+}
+#mensagem {
     background: none;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 1px solid black;
-}
-input,textarea{
+  }
+  input, textarea {
     border-radius: 52px;
     border: 1px solid #fcaf17;
     padding: 5px;
@@ -127,357 +86,75 @@ input,textarea{
     outline: none;
     width: 30%;
     position: relative;
-}
-textarea{
+  }
+
+  textarea {
     height: 60px;
     padding: 20px;
-}
+  }
 
-.informações{
-    display: flex;
-    flex-direction: column;
-    margin-right: 200px;
-    background-color: rgb(232, 249, 252);
-    margin-right: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-
-}
-.informações h3,.informações h4{
-    margin-bottom: $spacetitulobtm;
-    text-align: right;
-}
-.informações h4{
-    color: #696969;
-}
-.informações p{
-    margin-right: $paragrafomargem;
-    text-align: right;
-}
-select{
+  select {
     border-radius: 52px;
     cursor: pointer;
     border: 1px solid #fcaf17;
     padding: 5px;
-    background-color:#fcaf17 ;
+    background-color: #fcaf17;
     color: white;
     outline: none;
     width: 20%;
     position: relative;
-}
-button{
+  }
+  
+  button {
     border-radius: 52px;
     cursor: pointer;
     border: 1px solid #fcaf17;
     padding: 5px;
-    background-color:#fcaf17 ;
+    background-color: #fcaf17;
     color: white;
     outline: none;
     width: 15%;
     position: relative;
-}
-
-
-
-@media only screen and (max-width: 1300px){
+  }
+   
+  @media only screen and (max-width: 1000px){
     main{
-        display:flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 0px;
+        height: 100vh;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-        margin-right: 0px; 
-        }
-    .mvv{
-        display: flex;
-        flex-direction: column;
-        margin-top:1px;
-        margin-left: 0px;
-        padding-top: 15px;
-        justify-content: center;
         align-items: center;
     }
-    div.mvv{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+    .mvv{
+        width: 100%;
+        
     }
     .segundaparte{
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 2px;
-        
+       
     }
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        margin-top:2vh;
-        padding-left: $paddinghorizontal;
-        padding-right: $paddinghorizontal;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background-color: rgb(232, 249, 252);
-    }
-    .mvv h3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .mvv p{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-    }
-    .informações{
-        display: flex;
-        flex-direction: column;
-        margin-right: 200px;
-        background-color: rgb(232, 249, 252);
-        margin-right: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        align-items: center;
-        text-align: center;
-    }
-    .informações h3,.informações h4{
-        margin-bottom: $spacetitulobtm;
-        text-align: center;
-    }
-    .informações h4{
-        color: #696969;
-    }
-    .informações p{
-        margin-right: $paragrafomargem;
+    .missao h3,.visao h3,.valores h3,.coordenador h3,.ConselhoTecnico h3,.ars h3,.aces h3,.modelo h3,.inicioatividade h3{
         text-align: center;
         
     }
+    .missao p,.visao p,.valores p,.coordenador p,.ConselhoTecnico p,.ars p,.aces p,.modelo p,.inicioatividade p{
+        text-align: center;
+      
+    }
+    .sede h3  ,.polo h3, .sede h4  ,.polo h4 {
+        text-align: center;
+    }
+    .sede h4  ,.polo h4 {
+        text-align: center;
+    }
+    .sede p ,.polo p {
+        text-align: center;
+    }
+  
 }
-@media only screen and (max-width: 500px){
-    main{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-        margin-right: 0px; 
-        }
-    .mvv{
-        display: flex;
-        flex-direction: column;
-        margin-top:1px;
-        margin-left: 0px;
-        padding-top: 15px;
-        justify-content: center;
-        align-items: center;
-    }
-    div.mvv{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .segundaparte{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 2px;
-        
-    }
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        margin-top:2vh;
-        padding-left: $paddinghorizontal;
-        padding-right: $paddinghorizontal;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background-color: rgb(232, 249, 252);
-    }
-    .mvv h3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .mvv p{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-    }
-    .informações{
-        display: flex;
-        flex-direction: column;
-        margin-right: 200px;
-        background-color: rgb(232, 249, 252);
-        margin-right: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        align-items: center;
-        text-align: center;
-    }
-    .informações h3,.informações h4{
-        margin-bottom: $spacetitulobtm;
-        text-align: center;
-    }
-    .informações h4{
-        color: #696969;
-    }
-    .informações p{
-        margin-right: $paragrafomargem;
-        text-align: center;
-        
-    }
-    button{
-        border-radius: 52px;
-        cursor: pointer;
-        border: 1px solid #fcaf17;
-        padding: 5px;
-        background-color:#fcaf17 ;
-        color: white;
-        outline: none;
-        width: 25%;
-        position: relative;
-    }
-    input,textarea{
-        border-radius: 52px;
-        border: 1px solid #fcaf17;
-        padding: 9px;
-        color: black;
-        outline: none;
-        width: 50%;
-        position: relative;
-    }
-    select{
-        border-radius: 52px;
-        cursor: pointer;
-        border: 1px solid #fcaf17;
-        padding: 5px;
-        background-color:#fcaf17 ;
-        color: white;
-        outline: none;
-        width: 40%;
-        position: relative;
-    }
-}
-@media only screen and (max-width: 400px){
-    main{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-        margin-right: 0px; 
-        }
-    .mvv{
-        display: flex;
-        flex-direction: column;
-        margin-top:1px;
-        margin-left: 0px;
-        padding-top: 15px;
-        justify-content: center;
-        align-items: center;
-    }
-    div.mvv{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .segundaparte{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 2px;
-        
-        
-    }
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        margin-top:2vh;
-        padding-left: $paddinghorizontal;
-        padding-right: $paddinghorizontal;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background-color: rgb(232, 249, 252);
-    }
-    .mvv h3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .mvv p{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-    }
-    .informações{
-        display: flex;
-        flex-direction: column;
-        margin-right: 200px;
-        background-color: rgb(232, 249, 252);
-        margin-right: 15px;
-        padding-right: 0px;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        align-items: center;
-        text-align: center;
-    }
-    .informações h3,.informações h4{
-        margin-bottom: $spacetitulobtm;
-        text-align: center;
-    }
-    .informações h4{
-        color: #696969;
-    }
-    .informações p{
-        margin-right: 0px;
-        text-align: center;
-        
-    }
-    
-    button{
-        border-radius: 52px;
-        cursor: pointer;
-        border: 1px solid #fcaf17;
-        padding: 5px;
-        background-color:#fcaf17 ;
-        color: white;
-        outline: none;
-        width: 30%;
-        position: relative;
-    }
-    input,textarea{
-        border-radius: 52px;
-        border: 1px solid #fcaf17;
-        padding: 9px;
-        color: black;
-        outline: none;
-        width: 90%;
-        position: relative;
-    }
-    select{
-        border-radius: 52px;
-        cursor: pointer;
-        border: 1px solid #fcaf17;
-        padding: 5px;
-        background-color:#fcaf17 ;
-        color: white;
-        outline: none;
-        width: 40%;
-        position: relative;
-    }
+@media only screen and (max-width: 550px){
+    input, textarea {
+        width: 60%;
+      }
 }
