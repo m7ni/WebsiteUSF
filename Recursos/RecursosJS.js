@@ -1,7 +1,7 @@
-google.charts.load('current', {packages: ['corechart', 'line']});
-google.charts.setOnLoadCallback(drawBackgroundColor);
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(media_consultas);
 
-function drawBackgroundColor() {
+function media_consultas() {
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'X');
       data.addColumn('number', 'Média');
@@ -22,6 +22,10 @@ function drawBackgroundColor() {
         },
       };
 
-      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      var chart = new google.visualization.LineChart(document.getElementById('chart_media_consultas'));
       chart.draw(data, options);
     }
+    $(window).resize(function(){
+      media_consultas();
+    });
+    
