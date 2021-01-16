@@ -1,14 +1,5 @@
-.graph {
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-top: 30px;
-}
-
-@media only screen and (max-width: 600px) {
-  .graph {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
-  }
+.titulo {
+  text-align: center;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=RecursosSASS.css.map */
