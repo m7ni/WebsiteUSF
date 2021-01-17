@@ -4,9 +4,9 @@
   height: 100%;
   animation: slide 16s ease-in-out infinite;
   background-size: cover;
-  background-position: center;
   position: fixed;
   object-fit: cover;
+ 
   }
 .outer{
   object-fit: cover;
