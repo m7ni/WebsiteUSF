@@ -14,8 +14,8 @@ $marginhorizontal:15px;
 main{
     display: flex;
     flex-direction: row;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 5%;
+  margin-right: 5%;
     margin-top: 20px;
 }
 
@@ -119,8 +119,8 @@ main{
    
   @media only screen and (max-width: 1000px){
     main{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 0px;
         height: 100vh;
         flex-direction: column;
@@ -128,6 +128,7 @@ main{
     }
     .mvv{
         width: 100%;
+        padding-right:0px;
         
     }
     .segundaparte{
@@ -154,7 +155,14 @@ main{
   
 }
 @media only screen and (max-width: 550px){
+  
     input, textarea {
         width: 60%;
       }
+      button{
+          width: 30%;
+      }
+      select{
+        width: 50%;
+    }
 }

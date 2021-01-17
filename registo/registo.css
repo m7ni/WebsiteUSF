@@ -11,8 +11,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .login {
@@ -79,7 +79,7 @@ input {
   padding-left: 5px;
   border: none;
   max-width: 170px;
-  width: 170px;
+  width: 70%;
 }
 
 .form {
@@ -104,7 +104,7 @@ input {
 @media only screen and (max-width: 1200px) {
   .login1 {
     background-color: #e8f9fc;
-    width: 70%;
+    width: 30%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -176,8 +176,6 @@ input {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
     height: 100%;
   }
   .login1 {

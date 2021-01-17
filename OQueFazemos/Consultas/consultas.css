@@ -60,19 +60,6 @@ button {
   cursor: pointer;
 }
 
-/*@media only screen and (max-width: 1300px){
-    
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        margin-top:2vh;
-        padding-left: $paddinghorizontal;
-        padding-right: $paddinghorizontal;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background-color: rgb(232, 249, 252);
-    }
-}*/
 @media only screen and (max-width: 900px) {
   .formulario {
     display: -webkit-box;

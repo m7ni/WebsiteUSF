@@ -14,8 +14,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 20px;
 }
 
@@ -126,8 +126,8 @@ button {
 
 @media only screen and (max-width: 1000px) {
   main {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 0px;
     height: 100vh;
     -webkit-box-orient: vertical;
@@ -140,6 +140,7 @@ button {
   }
   .mvv {
     width: 100%;
+    padding-right: 0px;
   }
   .segundaparte {
     width: 100%;
@@ -164,6 +165,12 @@ button {
 @media only screen and (max-width: 550px) {
   input, textarea {
     width: 60%;
+  }
+  button {
+    width: 30%;
+  }
+  select {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=Qsomoscss.css.map */

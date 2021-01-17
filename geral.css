@@ -21,9 +21,8 @@ header{
   background-color: rgb(232, 249, 252);
   margin-left: 0px;
   margin-right: 0px;
-
- 
 }
+
 .logoUSF{
   margin-left: 16px;
   padding: 1px;
@@ -37,100 +36,77 @@ header{
   width: max-content;
   height: max-content;
   max-height: 10vh;
-
-    
 }
+
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
   --overlay-color: rgba(24, 39, 51 , 0.85);
   --menu-speed: 0.75s;
 }
 
-.container {
-  max-width: 100%;
-  margin: auto;
-  overflow:hidden ;
-  padding: 0 3rem;
-}
-
-
-.btn {
-  display: inline-block;
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  transition: opacity 1s ease-in-out;
-  text-decoration: none;
-}
-
-.btn:hover {
-  opacity: 0.7;
-}
-
 /* menu geral*/
 .menu-wrap {
-  position: fixed;
-  top: 2px;
-  right: 16px;
-  z-index: 1;
+position: fixed;
+top: 2px;
+right: 16px;
+z-index: 1;
+
 }
 
 .menu-wrap .toggler {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: 2;
-  cursor: pointer;
-  width: 10vh;
-  height: 10vh;
-  opacity: 0;
+position: absolute;
+top: 0px;
+right: 0px;
+z-index: 2;
+cursor: pointer;
+width: 10vh;
+height: 10vh;
+opacity: 0;
 }
 
 .menu-wrap .hamburger {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: 10vh;
-  height: 10vh;
-  padding: 1rem;
-  background: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
+position: absolute;
+top: 0;
+right: 0;
+z-index: 1;
+width: 10vh;
+height: 10vh;
+padding: 1rem;
+background: var(--primary-color);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
 }
 
 /* linhas */
 .menu-wrap .hamburger > div {
-  position: relative;
-  flex: none;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
- 
+position: relative;
+flex: none;
+width: 100%;
+height: 2px;
+background: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.4s ease;
+
 }
 
 /* linhas de cima e de baixo*/
 .menu-wrap .hamburger > div::before,
 .menu-wrap .hamburger > div::after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  width: 100%;
-  height: 2px;
-  background: inherit;
+content: '';
+position: absolute;
+z-index: 1;
+top: -10px;
+width: 100%;
+height: 2px;
+background: inherit;
 }
 
 .menu-wrap .hamburger > div::after {
-  top: 10px;
+top: 10px;
 }
 
 /* animação quando se usa*/
@@ -139,150 +115,156 @@ header{
 /* transforma linhas em X quando se dá check */
 .menu-wrap .toggler:checked + .hamburger > div:before,
 .menu-wrap .toggler:checked + .hamburger > div:after {
-  top: 0;
-  transform: rotate(90deg);
+top: 0;
+transform: rotate(90deg);
 }
 
 /* animação x quando se dá hover */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
-  transform: rotate(225deg);
+transform: rotate(225deg);
 }
 
 /* menu */
 .menu-wrap .toggler:checked ~ .menu {
-  visibility: visible;
+visibility: visible;
 }
 
 .menu-wrap .toggler:checked ~ .menu > div {
-  transform: scale(1);
-  transition-duration: var(--menu-speed);
+transform: scale(1);
+transition-duration: var(--menu-speed);
 }
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
-  opacity: 1;
-  transition:  opacity 0.4s ease 0.4s;
+opacity: 1;
+transition:  opacity 0.4s ease 0.4s;
 }
 
 .menu-wrap .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+visibility: hidden;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .menu-wrap .menu > div {
-  background: var(--overlay-color);
-  border-radius: 50%;
-  width: 400vw;
-  height: 400vw;
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  transform: scale(0);
-  transition: all 0.4s ease;
+background: var(--overlay-color);
+border-radius: 50%;
+width: 400vw;
+height: 400vw;
+display: flex;
+flex: none;
+align-items: center;
+justify-content: center;
+transform: scale(0);
+transition: all 0.4s ease;
 }
 
 .menu-wrap .menu > div > div {
-  text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+text-align: center;
+max-width: 90vw;
+max-height: 100vh;
+opacity: 0;
+transition: opacity 0.4s ease;
 }
 
 .menu-wrap .menu > div > div > ul > li {
-  list-style: none;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 1rem;
-  }
+list-style: none;
+color: #fff;
+font-size: 1.5rem;
+padding: 1rem;
+}
 
 .menu-wrap .menu > div > div > ul > li > a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.4s ease;
+color: inherit;
+text-decoration: none;
+transition: color 0.4s ease;
 }
 
 
 ul {
-  list-style-type: none;
+list-style-type: none;
 }
 
 #dropdown.active{
-  display:block;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  font-size: 22px;
+display:block;
+margin-top: 3vh;
+margin-bottom: 3vh;
+font-size: 22px;
 }
 
 #menu1 >li{
-  display: inline-block;
-  transition: all 0.4 ease;
+display: inline-block;
+transition: all 0.4 ease;
 }
 #dropdown{
-  display: none;
+display: none;
 
 }
 #menu1 p:hover{
-  cursor:pointer;
-  color:black;
-  transition: 0.5s ease;
- 
+cursor:pointer;
+color:black;
+transition: 0.5s ease;
+
 
 }
 
 a.links_nav{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+text-decoration: none;
+color: white;
+display: flex;
+flex-direction: column;
 }
 a.links_nav.active{
-  display:block ;
-  margin-top: 3vh;
-  font-size: 22px;
+display:block ;
+margin-top: 3vh;
+font-size: 22px;
 }
 
 a.links_nav::after{
-  content:'';
-  display:block;
-  width: 0;
-  height: 2px;
-  margin: 2px;
-  background: black;
-  transition: 0.5;
+content:'';
+display:block;
+width: 0;
+height: 2px;
+margin: 2px;
+background: #fcaf17;
+transition: 0.5;
 }
 
 a.links_nav:hover::after{
-  width: 100%;
-  transition: 0.5s;
+width: 100%;
+transition: 0.5s;
 }
 
 #menu1 >li{
-  display: inline-block;
-  transition: all 0.4s ease;
+display: inline-block;
+transition: all 0.4s ease;
 }
 #dropdown{
-  display: none;
+display: none;
+border: 1px solid #fcaf17;
+padding: 5px;
+border-radius: 5px;
 
 }
 #menu1 p:hover{
-  cursor:pointer;
-  color: black;
+cursor:pointer;
+color: #fcaf17;
 }
 a.links_nav2{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  border: 1px solid black;
-  align-items: center;
+text-decoration: none;
+color: rgb(255, 255, 255);
+border: 1px solid black;
+align-items: center;
 }
 
 ul#dropdown.active{
-  margin-top: 40px;
-  margin-bottom: -5px;
+margin-top: 40px;
+margin-bottom: -5px;
 }
+

@@ -11,8 +11,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 5%;
+  margin-right: 5%;
   height: 100%;
 }
 

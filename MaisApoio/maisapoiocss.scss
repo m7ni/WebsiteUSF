@@ -6,8 +6,8 @@ $paddinghorizontal:15px;
 $marginhorizontal:15px;
 
 main{
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 0px;
     height: 100vh;
 
@@ -74,13 +74,7 @@ main{
 }
 
 @media only screen and (max-width: 1000px){
-    main{
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 0px;
-        height: 100vh;
-    
-    }
+   
     .primeiraparte{
         display: flex;
         flex-direction: column;
