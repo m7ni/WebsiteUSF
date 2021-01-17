@@ -40,15 +40,12 @@ function media_consultas() {
       var chart = new google.visualization.LineChart(document.getElementById('chart_media_consultas'));
       chart.draw(data, options);
     }
-    $(window).resize(function(){
-      media_consultas();
-    });
+    
 
 /*Chart 2*/
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(recursos_humanos);
 
-  function drawChart() {
+  function recursos_humanos() {
     var data = google.visualization.arrayToDataTable([
       ['Ano', 'Médicos', 'Enfermeiros'],
       ['2010',  3,      5],
@@ -81,7 +78,12 @@ google.charts.setOnLoadCallback(drawChart);
         legend: { position: 'right' }
       };
 
-      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+      var chart = new google.visualization.LineChart(document.getElementById('recursos_humanos_chart'));
 
       chart.draw(data, options);
 }
+
+$(window).resize(function(){
+  media_consultas();
+  recursos_humanos()
+});
